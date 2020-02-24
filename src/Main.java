@@ -15,9 +15,9 @@ public class Main {
         for (int i = 0; i < numberOfRuns; i++){
             while(p1.getPosition() < 30){
                 p1.setPosition(d6.rollDie());
+                d6.count();
             }
             p1.resetPosition();
-            d6.totalRollCount+=d6.getRollCount();
             System.out.println("total roll count so far: " + d6.totalRollCount);
         }
         d6.avgRollCount(numberOfRuns);

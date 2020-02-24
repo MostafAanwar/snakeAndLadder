@@ -13,7 +13,9 @@ public class Dice {
         System.out.println(roll);
         return  roll;
     }
-
+    public void count(){
+        totalRollCount++;
+    }
     int getRollCount(){
         return this.rollCount;
     }
